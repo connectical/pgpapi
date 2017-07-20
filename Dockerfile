@@ -24,4 +24,6 @@ EXPOSE "$PORT"
 
 VOLUME [ "$GNUPG_HOME" ]
 
+USER nobody
+
 ENTRYPOINT [ "/usr/local/bin/pgpapi", "server" ]
