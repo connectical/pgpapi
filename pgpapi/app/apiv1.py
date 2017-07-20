@@ -14,8 +14,12 @@ import os
 
 
 SKS_KEYSERVER = os.environ.get('PGPAPI_KEYSERVER', 'pgp.mit.edu')
-GNUPG_HOME = os.environ.get('PGPAPI_GNUPG_HOME', mkdtemp())
+GNUPG_HOME = os.environ.get('PGPAPI_GNUPG_HOME', None)
 MAX_SEARCH_KEYS = os.environ.get('PGPAPI_MAX_SEARCH_KEYS', '40')
+
+# If GNUPG_HOME is None then create temp directory
+if GNUPG_HOME is None:
+    GNUPG_HOME = mkdtemp()
 
 # Setup MAX_SEARCH_KEYS
 try:
