@@ -1,4 +1,4 @@
-# OpenPGP keyservers REST API [![Build Status](https://travis-ci.org/ogarcia/pgpapi.svg?branch=master)](https://travis-ci.org/ogarcia/pgpapi)
+# OpenPGP keyservers REST API [![Build Status](https://travis-ci.org/connectical/pgpapi.svg?branch=master)](https://travis-ci.org/connectical/pgpapi)
 
 (c) 2017 Óscar García Amor
 
